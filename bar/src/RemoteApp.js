@@ -31,7 +31,7 @@ const RemoteApp = () => {
       <br/>
 
       <div>
-        <Button variant="contained" size="large" color="secondary" onClick={() => dispatch(increment())}>
+        <Button variant="contained" size="large" color="primary" onClick={() => dispatch(increment())}>
           Increment
         </Button>
       </div>
