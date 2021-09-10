@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap --ignore-scripts",
+    "start": "concurrently \"lerna run --scope @module-federation-example/* --parallel start\" \"yarn serve\"",
+    "build": "lerna run --scope @module-federation-example/* build",
+    "serve": "lerna run --scope @module-federation-example/* --parallel serve",
+    "clean": "lerna run --scope @module-federation-example/* --parallel clean"
+  },
+  "workspaces": {
+    "packages": [
+      "./*"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "3.22.1",
+    "concurrently": "6.2.1"
+  }
+}
