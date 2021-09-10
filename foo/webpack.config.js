@@ -31,10 +31,10 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: 'micro1',
-      filename: 'micro1.js',
+      name: 'foo',
+      filename: 'foo.js',
       exposes: {
-        './Micro1': './src/RemoteApp.js',
+        './Foo': './src/RemoteApp.js',
       },
       shared: {
         ...deps,

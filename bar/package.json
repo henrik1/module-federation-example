@@ -1,5 +1,5 @@
 {
-  "name": "@module-federation-example/micro2",
+  "name": "@module-federation-example/bar",
   "version": "0.0.0",
   "private": true,
   "dependencies": {

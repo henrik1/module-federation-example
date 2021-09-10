@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { Typography, Button } from '@material-ui/core';
 import reducer, { increment, reset } from './reducer';
 
-const SCOPE = 'micro2';
+const SCOPE = 'bar';
 
 const RemoteApp = () => {
   const dispatch = useDispatch();
@@ -15,16 +15,17 @@ const RemoteApp = () => {
 
   return (
     <div style={{ margin: '30px' }}>
-      <Typography variant="h1">Hello from {appName}</Typography>
-      <br/>
-      <br/>
-
-      <Typography variant="h2">{appName} lives in {hostName}</Typography>
+      <Typography variant="h4">Host: {hostName}</Typography>
 
       <br/>
       <br/>
 
-      <Typography variant="h3">Clicked: {value}</Typography>
+      <Typography variant="h4">Micro: {appName}</Typography>
+
+      <br/>
+      <br/>
+
+      <Typography variant="h4">Clicked: {value}</Typography>
 
       <br/>
       <br/>

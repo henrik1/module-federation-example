@@ -1,5 +1,5 @@
 const initialState = {
-  appName: 'foo',
+  appName: 'FOO Micro-frontend',
 };
 
 const reducer = (state = initialState, action) => {

@@ -1,5 +1,5 @@
 const initialState = {
-  appName: 'bar',
+  appName: 'BAR Micro-frontend',
   value: 0
 };
 

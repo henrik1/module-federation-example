@@ -1,5 +1,5 @@
 {
-  "name": "@module-federation-example/micro1",
+  "name": "@module-federation-example/foo",
   "version": "0.0.0",
   "private": true,
   "dependencies": {

@@ -1,5 +1,5 @@
 const initialState = {
-  name: 'host-app-123',
+  name: 'MODULE FEDERATION EXAMPLE',
 };
 
 const appReducer = (state = initialState, action) => {

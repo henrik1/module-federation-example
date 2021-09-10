@@ -16,8 +16,8 @@ const dynamicFederation = async (scope, module) => {
   });
 };
 
-const Micro1 = React.lazy(() => dynamicFederation('micro1', './Micro1'));
-const Micro2 = React.lazy(() => dynamicFederation('micro2', './Micro2'));
+const Foo = React.lazy(() => dynamicFederation('foo', './Foo'));
+const Bar = React.lazy(() => dynamicFederation('bar', './Bar'));
 
 const SidebarWrapper = () => {
   const { name } = useSelector(state => state.host);
@@ -43,12 +43,12 @@ const HostApp = () => {
             <Switch>
               <Route exact path="/foo">
                 <Suspense fallback="Loading...">
-                  <Micro1 store={store} />
+                  <Foo store={store} />
                 </Suspense>
               </Route>
               <Route exact path="/bar">
                 <Suspense fallback="Loading...">
-                  <Micro2 store={store} />
+                  <Bar store={store} />
                 </Suspense>
               </Route>
             </Switch>
